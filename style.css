@@ -128,6 +128,9 @@ table {
   border-spacing: 0;
 }
 
+body {
+  font-family: "Amatic SC", cursive;
+}
 .wrap {
   width: 1024px;
   margin: 30px auto;
@@ -140,6 +143,13 @@ table {
   background-size: cover;
   height: 556px;
 }
+.jumbotron h2 {
+  padding-top: 170px;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 800;
+}
+
 .navbar {
   background-color: #18224b;
   position: absolute;
@@ -169,6 +179,7 @@ table {
 .topmenu li {
   padding-right: 40px;
   padding-left: 40px;
+  font-size: 20px;
 }
 
 .topmenu li a {
@@ -179,5 +190,36 @@ table {
 
 .topmenu li a:hover {
   color: #00ffa2;
-  border-bottom: 3px solid #00ffa2;
+  font-size: 23px;
+}
+.container {
+  padding-top: 30px;
+}
+.profile {
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+}
+.profile h3 {
+  font-size: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.profile p {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.aboutMe img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.color {
+  color: rgb(20, 85, 74);
 }
