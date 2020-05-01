@@ -129,12 +129,13 @@ table {
 }
 
 body {
-  font-family: "Amatic SC", cursive;
+  font-family: "Caveat", cursive;
 }
 .wrap {
   width: 1024px;
   margin: 30px auto;
   position: relative;
+  text-align: center;
 }
 
 .jumbotron {
@@ -148,6 +149,7 @@ body {
   text-align: center;
   font-size: 80px;
   font-weight: 800;
+  color: #0bf09cf3;
 }
 
 .navbar {
@@ -177,8 +179,8 @@ body {
 }
 
 .topmenu li {
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
   font-size: 20px;
 }
 
@@ -194,17 +196,18 @@ body {
 }
 .container {
   padding-top: 30px;
-}
-.profile {
-  text-align: center;
-  width: 800px;
+  width: 900px;
   margin: 0 auto;
 }
-.profile h3 {
+
+.profile h3,
+.project h3,
+.footer h3 {
   font-size: 50px;
   padding-bottom: 20px;
   padding-top: 20px;
 }
+
 .profile p {
   font-size: 30px;
   padding-bottom: 10px;
@@ -212,14 +215,49 @@ body {
 
 .aboutMe {
   display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 30px;
 }
-.aboutMe img {
+.profileImg,
+.intro,
+.detail {
+  flex: 1;
+  text-align: left;
+}
+.profileImg img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
 }
+
+.aboutMe h4 {
+  font-size: 28px;
+  padding-bottom: 25px;
+}
+.aboutMe p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.intro {
+  padding-right: 80px;
+}
+.intro p {
+  padding-bottom: 20px;
+}
+.detail h5 {
+  font-size: 25px;
+  color: rgb(131, 130, 128);
+  padding-bottom: 20px;
+}
+.detail p {
+  padding-bottom: 20px;
+}
 .color {
   color: rgb(20, 85, 74);
+}
+.project {
+  margin-top: 20px;
+  background-color: rgb(243, 239, 225);
+}
+.footer {
+  background-color: rgb(121, 119, 119);
 }
