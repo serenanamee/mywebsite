@@ -131,12 +131,7 @@ table {
 body {
   font-family: "Caveat", cursive;
 }
-.wrap {
-  width: 1024px;
-  margin: 30px auto;
-  position: relative;
-  text-align: center;
-}
+
 
 .jumbotron {
   position: relative;
@@ -145,50 +140,55 @@ body {
   height: 556px;
 }
 .jumbotron h2 {
-  padding-top: 170px;
+  padding-top: 150px;
   text-align: center;
   font-size: 80px;
   font-weight: 800;
   color: #0bf09cf3;
 }
 
+.jumbotron .scroll-down {
+    height: 80px;
+    width: 110px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    background-color: #18224b;
+    text-align: center;
+}
+.jumbotron .scroll-down i {
+    color: #FFFFFF;
+    font-size: 40px;
+    padding-top: 20px; 
+    animation: jump 1.5s infinite; 
+}
+
+@keyframes jump {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(0px, -9px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
 .navbar {
   background-color: #18224b;
   position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  width: 1024px;
-  justify-content: space-between;
-}
-.navbar img {
-  padding: 7px;
-}
-.navbar h1 a {
-  display: block;
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
-  margin-left: 10px;
+  top: 100%;
+  right:5%;
+  width: 110px;
+  z-index: 3;
 }
 
-.topmenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.topmenu li {
-  padding-right: 30px;
-  padding-left: 30px;
-  font-size: 20px;
-}
 
-.topmenu li a {
-  text-decoration: none;
-  display: block;
-  color: #fff;
-}
+
+
 
 .topmenu li a:hover {
   color: #00ffa2;
@@ -200,15 +200,15 @@ body {
   margin: 0 auto;
 }
 
-.profile h3,
-.project h3,
-.footer h3 {
+.introduction h3,
+.introduction h3,
+.introduction h3 {
   font-size: 50px;
   padding-bottom: 20px;
   padding-top: 20px;
 }
 
-.profile p {
+.introduction p {
   font-size: 30px;
   padding-bottom: 10px;
 }
